@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="card card-login mx-auto mt-5">
+        <div class="card-header text-center">Login</div>
+        <div class="card-body shadow-lg p-3 mb-5 bg-white rounded">
+            <form id="myForm" name="form">
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user iconcolor"></i></span>
+                    </div>
+                    <!-- <input type="text" class="form-control" placeholder="username" data-rule="required|email"> -->
+                    <input class="form-control" data-pattern-error="Invalid email format"
+                           data-require-error="Email is required" ng-model="username"
+                           placeholder="username" required type="text">
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                    </div>
+                    <input class="form-control" ng-model="password" placeholder="password" required="" type="password">
+                </div>
+
+                <div class="row align-items-center remember">
+                    <input style="margin-left: 20px; margin-right: 5px;" type="checkbox">Remember Me
+                </div>
+                <script>
+                    alert("HELLO");
+                </script>
+                <input class="btn btn-primary btn-block" ng-click="login_check()" type="submit" value="Login">
+
+                <script>
+                    alert(login_check());
+                </script>
+            </form>
+            <div class="form-group">
+
+                <div class="text-center">
+                    <a class="d-block small mt-3" href="registration">Register an Account</a>
+                    <a class="d-block small" href="forgotpassword">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
